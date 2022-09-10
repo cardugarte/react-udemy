@@ -1,7 +1,15 @@
+describe('Esta es una prueba de < DemoComponent />', () => {
 
+  test( 'Esta prueba no debe fallar', () => {
+    // 1. Inicialización
+    const message1 = 'Hola mundo';
+  
+    // 2. Estímulo
+    const message2 = message1.trim();
+  
+    // 3. Observar el comportamiento... esperado 
+    expect( message1) .toBe( message2 );
+  
+  });
 
-test('Esta prueba no debe fallar', () => {
-  if(1 === 0) {
-    throw new Error('ups falló, estúpida mi pelo idiota')
-  }
-})
+}) 
